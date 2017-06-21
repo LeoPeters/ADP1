@@ -22,11 +22,11 @@ public class TestListeB {
 //      Element element2 = new Element();
       pos.setElement(element);
       listeA.insert(element, pos);
-      for(int i = 0; i < listeA.getSize(); i++) {
-        if(listeA.getListArrayIndex(i) == pos) {
-          testKey = listeA.getListArrayIndex(i).getKEY();
-        }
-      }
+//      for(int i = 0; i < listeA.getSize(); i++) {
+//        if(listeA.getListArrayIndex(i) == pos) {
+//          testKey = listeA.getListArrayIndex(i).getKEY();
+//        }
+//      }
       assertEquals(testKey, element.getKEY());
 //      listeA.insert(element2, pos);
 //      assertEquals(listeA.retrieve(pos).getKEY(), element.getKEY());

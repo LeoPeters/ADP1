@@ -14,13 +14,16 @@ package aufgabenblatt3;
  *
  */
 public class SummeRekursiv {
-  private int ergebnis = 0;
-
   public int summeBerechnen(int n) {
-    if (n < 0) {
-      summeBerechnen(n - 1);
-      ergebnis += n;
+    if (n > 0) {
+      System.out.println("Rechnen");
+      return n + summeBerechnen(n - 1);
     }
-    return ergebnis;
+    return 0;
+  }
+
+  public static void main(String args[]) {
+    SummeRekursiv rekursiv = new SummeRekursiv();
+    System.out.println(rekursiv.summeBerechnen(11));
   }
 }
